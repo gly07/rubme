@@ -1,0 +1,117 @@
+body{
+    position: fixed;
+    background-color: rgb(20, 20, 20);
+    padding: 0;
+    margin: 0;
+    width: 1920px;
+    height: 1080px;
+}
+
+
+
+  .object-image-cloth-metal img {
+    position: fixed;
+    right: 500px;
+    top: -50px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 0px;
+    z-index:8;
+  }
+
+  .custom_cursor {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    z-index:1;
+    pointer-events: none;
+  }
+  
+
+
+  .object-image-toothbrush-eraser img {
+    position: fixed;
+    right: -100px;
+    top: 200px;
+    height: 180px;
+    width: 220px;
+    margin-bottom: 40px;
+    z-index:8;
+  }
+
+  .object-image-toothbrush-eraser img:first-child {
+    position: fixed;
+    width: 500px;
+    height: 50px;
+    top: 600px;
+    right: -300px;
+    z-index:8;
+  }
+
+
+
+  .object-image-cotton-sandpaper img {
+    position: fixed;
+    left: -125px;
+    top: 200px;
+    height: 240px;
+    width: 300px;
+    margin-bottom: 40px;
+    z-index:8;
+  }
+
+  .object-image-cotton-sandpaper img:first-child {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    top: 600px;
+    left: -50px;
+    z-index:8;
+  }
+
+
+
+  .object-image-brush-sponge img {
+    position: fixed;
+    right: 900px;
+    bottom: -400px;
+    height: 600px;
+    width:600px;
+    margin-bottom: 0px;
+    z-index:8;
+  }
+
+  .object-image-brush-sponge img:first-child {
+    position: fixed;
+    width: 200px;
+    height: 300px;
+    bottom: -200px;
+    right: 500px;
+    z-index:8;
+  }
+
+ 
+
+  .brosse {
+    position: absolute;
+    width:300px;
+    z-index:1;
+    transition: transform 0.1s ease;
+    user-select: none;
+  }
+
+  .brosseBis {
+    position: absolute;
+    width:500px;
+    transform: rotate(90deg);
+    transition: transform 0.2s ease;
+    z-index:2;
+
+    user-select: none;
+  }
+
+  body {
+    cursor: cross;
+  }
+  
+ 

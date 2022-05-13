@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+    <script language="javascript" type="text/javascript" src="libraries/matter.js"></script>
+    <script src="libraries/matter-attractors.min.js"></script>
+    <script src="libraries/jquery-3.5.1.min.js"></script>
+    <title>RUB ME!</title>
+  </head>
+  
+  <body>
+    <div class="particle">
+      <script language="javascript" type="text/javascript" src="particle_sketch.js"></script>
+    </div>
+  
+    <div class="object-image-cloth-metal top">
+      <img class="object metal" src="assets/metal.png" alt="" />
+      <img class="object cloth" src="assets/cloth.png" alt="" />
+    </div>
+
+    <div class="object-image-toothbrush-eraser right">
+      <img class="object toothbrush" src="assets/toothbrush.png" alt="" />
+      <img class="object eraser" src="assets/eraser.png" alt="" />
+    </div>
+
+    <div class="object-image-cotton-sandpaper left">
+      <img class="object cotton" src="assets/cotton.png" alt="" />
+      <img class="object sandpaper" src="assets/sandpaper.png" alt="" />
+    </div>
+
+    <div class="object-image-brush-sponge bottom">
+      <img class="object sponge" src="assets/sponge.png" alt="" />
+      <img class="object brush" src="assets/Brush.png" alt="" />
+    </div>
+  
+    <script type="text/javascript">
+
+      var shifting = 50;
+      
+
+      $(document).ready(function() {
+        $(".object").mouseover(function(){
+          if ($(this).parent().hasClass("top")) {
+            $(this).css("margin-top", shifting);
+          } else if ($(this).parent().hasClass("left")) {
+            $(this).css("margin-left", shifting);
+          } else if ($(this).parent().hasClass("right")) {
+            $(this).css("margin-right", shifting);
+          } else {
+            $(this).css("margin-bottom", shifting);
+          }
+        });
+        
+        $(".object").mouseleave(function(){
+          $(".object").css({
+            "margin-top":0,
+            "margin-left":0,
+            "margin-right":0,
+            "margin-bottom":0
+          });
+        });
+
+        $(".object"). click(function(){
+          if ($(this).hasClass("metal")) {
+            window.location.href = "metal.html";
+          }
+          else if ($(this).hasClass("cloth")) {
+            window.location.href = "cloth.html";
+          }
+          else if ($(this).hasClass("toothbrush")) {
+            window.location.href = "toothbrush.html";
+          }
+          else if ($(this).hasClass("eraser")) {
+            window.location.href = "eraser.html";
+          }
+          else if ($(this).hasClass("sandpaper")) {
+            window.location.href = "sandpaper.html";
+          }
+          else if ($(this).hasClass("cotton")) {
+            window.location.href = "cotton.html";
+          }
+          else if ($(this).hasClass("sponge")) {
+            window.location.href = "sponge.html";
+          }
+          else if ($(this).hasClass("brush")) {
+            window.location.href = "brush.html";
+          }
+
+
+        });
+        
+      }) 
+    </script>
+  
+  
+  
+  
+
+  </body>
+</html>
